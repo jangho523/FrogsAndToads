@@ -12,10 +12,21 @@ namespace FrogToad {
     public:
         /** @brief Render the current model using already loaded resources. */
         void draw(const BoardModel& model) override;
+        
+        /** @brief Loads the textures. */
+        RaylibView();
+        /** @brief Unloads the textures. */
+        ~RaylibView();
 
         /** @brief Window width in pixels, available before view construction. */
         static int windowW();
         /** @brief Window height in pixels, available before view construction. */
         static int windowH();
+
+    private:
+        Texture2D frogTexture;
+        Texture2D toadTexture;
+        Texture2D frogHoverTexture;
+        Texture2D toadHoverTexture;
     };
 }

@@ -18,7 +18,7 @@ namespace FrogToad {
         /** @brief Return whether the board matches the goal. */
         bool isSolved() const;
 
-        /** @brief Returns game state. Unsolved boards report Playing until loss detection is implemented. */
+        /** @brief Returns game state: Playing, Solved, Lost */
         GameState state() const;
 
         /**

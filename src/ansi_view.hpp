@@ -37,4 +37,3 @@ namespace FrogToad {
         static const char* red()        { return "\x1b[38;5;196m"; }
     };
 }
-
